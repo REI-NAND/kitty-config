@@ -7,10 +7,10 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family      monospace
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
+font_family      SourceCodePro-Medium
+bold_font        SourceCodePro-Bold
+italic_font      SourceCodePro-Italic
+bold_italic_font SourceCodePro-BoldItalic
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -165,12 +165,10 @@ box_drawing_scale 0.001, 1, 1.5, 2
 
 
 #: Cursor customization {{{
-
-cursor #cccccc
+# cursor #cccccc
 
 #: Default cursor color
-
-cursor_text_color #111111
+# cursor_text_color #111111
 
 #: Choose the color of text under the cursor. If you want it rendered
 #: with the background color of the cell underneath instead, use the
@@ -272,8 +270,7 @@ mouse_hide_wait 3.0
 #: typing text. Disabled by default on macOS as getting it to work
 #: robustly with the ever-changing sea of bugs that is Cocoa is too
 #: much effort.
-
-url_color #0087bd
+# url_color #0087bd
 url_style curly
 
 #: The color and style for highlighting URLs on mouse-over. url_style
@@ -574,17 +571,14 @@ placement_strategy center
 #: this option. Using a value of center means the cell area will be
 #: placed centrally. A value of top-left means the padding will be on
 #: only the bottom and right edges.
-
-active_border_color #B571CA
+# active_border_color #B571CA
 
 #: The color for the border of the active window. Set this to none to
 #: not draw borders around the active window.
-
-inactive_border_color #cccccc
+# inactive_border_color #cccccc
 
 #: The color for the border of inactive windows
-
-bell_border_color #ff5a00
+# bell_border_color #ff5a00
 
 #: The color for the border of inactive windows in which a bell has
 #: occurred
@@ -721,17 +715,15 @@ active_tab_title_template none
 
 #: Template to use for active tabs, if not specified falls back to
 #: tab_title_template.
-
-active_tab_foreground   #000
-active_tab_background   #eee
+# active_tab_foreground   #000
+# active_tab_background   #eee
 active_tab_font_style   bold-italic
-inactive_tab_foreground #444
-inactive_tab_background #999
+# inactive_tab_foreground #444
+# inactive_tab_background #999
 inactive_tab_font_style normal
 
 #: Tab bar colors and styles
-
-tab_bar_background none
+# tab_bar_background none
 
 #: Background color for the tab bar. Defaults to using the terminal
 #: background color.
@@ -740,9 +732,9 @@ tab_bar_background none
 
 
 #: Color scheme {{{{{{{{{}}}
+# foreground #65AF50
+# background #640000
 
-foreground #CC313D
-background #F7C5CC
 #: The foreground and background colors
 
 background_opacity 0.8
@@ -766,15 +758,15 @@ background_opacity 0.8
 #: this setting when reloading the config will only work if
 #: dynamic_background_opacity was enabled in the original config.
 
-background_image /home/rei/Pictures/Wallpapers/asuka/Asuka-Transparent-Victor.png
+background_image /home/rei/Pictures/Art/Wallpapers/asuka/Asuka-Transparent-Victor.png
 
 #: Path to a background image. Must be in PNG format.
 
-background_image_layout tiled
+background_image_layout cscaled
 
 #: Whether to tile or scale the background image.
 
-background_image_linear no
+background_image_linear yes
 
 #: When background image is scaled, whether linear interpolation
 #: should be used.
@@ -799,13 +791,11 @@ dim_opacity 0.75
 
 #: How much to dim text that has the DIM/FAINT attribute set. One
 #: means no dimming and zero means fully dimmed (i.e. invisible).
-
-selection_foreground #65AF50
+# selection_foreground #65AF50
 
 #: The foreground for text selected with the mouse. A value of none
 #: means to leave the color unchanged.
-
-selection_background #0873BA
+# selection_background #0873BA
 
 #: The background for text selected with the mouse.
 
@@ -814,68 +804,54 @@ selection_background #0873BA
 #: The 256 terminal colors. There are 8 basic colors, each color has a
 #: dull and bright version, for the first 16 colors. You can set the
 #: remaining 240 colors as color16 to color255.
-
-color0 #000000
-color8 #767676
+# color0 #000000
+# color8 #767676
 
 #: black
-
-color1 #cc0403
-color9 #f2201f
+# color1 #cc0403
+# color9 #f2201f
 
 #: red
-
-color2  #19cb00
-color10 #23fd00
+# color2  #19cb00
+# color10 #23fd00
 
 #: green
-
-color3  #cecb00
-color11 #fffd00
+# color3  #cecb00
+# color11 #fffd00
 
 #: yellow
-
-color4  #0d73cc
-color12 #1a8fff
+# color4  #0d73cc
+# color12 #1a8fff
 
 #: blue
-
-color5  #cb1ed1
-color13 #fd28ff
+# color5  #cb1ed1
+# color13 #fd28ff
 
 #: magenta
-
-color6  #0dcdcd
-color14 #14ffff
+# color6  #0dcdcd
+# color14 #14ffff
 
 #: cyan
-
-color7  #dddddd
-color15 #ffffff
+# color7  #dddddd
+# color15 #ffffff
 
 #: white
-
-mark1_foreground black
+# mark1_foreground black
 
 #: Color for marks of type 1
-
-mark1_background #98d3cb
+# mark1_background #98d3cb
 
 #: Color for marks of type 1 (light steel blue)
-
-mark2_foreground black
+# mark2_foreground black
 
 #: Color for marks of type 2
-
-mark2_background #f2dcd3
+# mark2_background #f2dcd3
 
 #: Color for marks of type 1 (beige)
-
-mark3_foreground black
+# mark3_foreground black
 
 #: Color for marks of type 3
-
-mark3_background #f274bc
+# mark3_background #f274bc
 
 #: Color for marks of type 3 (violet)
 
@@ -883,12 +859,10 @@ mark3_background #f274bc
 
 #: }}}
 
-
-
 # }}}
 #: Advanced {{{
 
-shell .
+shell zsh
 
 #: The shell program to execute. The default value of . means to use
 #: whatever shell is set as the default shell for the current user.
@@ -1010,16 +984,14 @@ term xterm-kitty
 
 
 #: OS specific tweaks {{{
-
-wayland_titlebar_color system
+# wayland_titlebar_color system
 
 #: Change the color of the kitty window's titlebar on Wayland systems
 #: with client side window decorations such as GNOME. A value of
 #: system means to use the default system color, a value of background
 #: means to use the background color of the currently active window
 #: and finally you can use an arbitrary color, such as #12af59 or red.
-
-macos_titlebar_color system
+# macos_titlebar_color system
 
 #: Change the color of the kitty window's titlebar on macOS. A value
 #: of system means to use the default system color, a value of
@@ -1486,3 +1458,9 @@ map kitty_mod+f6 debug_config
 #: }}}
 
 include theme.conf
+
+
+# BEGIN_KITTY_THEME
+# 1984 Dark
+include current-theme.conf
+# END_KITTY_THEME
